@@ -1,0 +1,17 @@
+<html>
+<body>
+    <h2 style="color:#d12c2c;">🚨 <b>DCT Ingestion Audit Date Alert</b> 🚨</h2>
+    <p>
+        Dear team,<br><br>
+        <b>Source Database:</b> <span style="color:#2c3e50;">{source_db}</span><br>
+        <b>Environment:</b> <span style="color:#2c3e50;">{environment}</span><br><br>
+        The following tables are more than <b style="color:red;">{time_alert} DAY(S)</b> out of date on the audit date when comparing the source and snowflake: <br><br>
+        {html_table}
+        <br>
+        Please review the ingestion/replication process for these tables.<br><br>
+        The full report is attached.<br><br>
+        Best regards,<br>
+        DCT Team
+    </p>
+</body>
+</html>

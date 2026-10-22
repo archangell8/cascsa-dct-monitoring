@@ -1,0 +1,519 @@
+tables:
+  jde:
+    proddta:
+      F0006:
+        audit_column: MCUPMJ
+        primary_keys:
+          - MCMCU
+      F00092:
+        audit_column: T3UPMJ
+        primary_keys:
+          - T3SDB
+          - T3TYDT
+          - T3SBA1
+          - T3KCO
+          - T3SBA2
+          - T3MCU
+          - T3SBN1
+          - T3SBN2
+          - T3UKID
+      F0101:
+        audit_column: ABUPMJ
+        primary_keys:
+          - ABAN8
+      F0116:
+        audit_column: ALUPMJ
+        primary_keys:
+          - ALAN8
+          - ALEFTB
+      F0150:
+        audit_column: MAUPMJ
+        primary_keys:
+          - MAOSTP
+          - MAPA8
+          - MAAN8
+      # F03012:
+      #   audit_column: AIUPMJ
+      #   primary_keys:
+      #     - AIAN8
+      #     - AICO
+      F38010:
+        audit_column: DNUPMJ
+        primary_keys:
+          - DNDMCT
+          - DNDMCS
+      F40039:
+        audit_column: DTUPMJ
+        primary_keys:
+          - DTDCT
+      F41002:
+        audit_column: UMUPMJ
+        primary_keys:
+          - UMMCU
+          - UMITM
+          - UMUM
+          - UMRUM
+      F4101:
+        audit_column: IMUPMJ
+        primary_keys:
+          - IMITM
+      F4102:
+        audit_column: IBUPMJ
+        primary_keys:
+          - IBITM
+          - IBMCU
+      F41112:
+        audit_column: INUPMJ
+        primary_keys:
+          - INDCT
+          - INFY
+          - INCTRY
+          - INITM
+          - INMCU
+          - INLOCN
+          - INLOTN
+          - INGLPT
+          - INAN8
+          - INSHAN
+      F4201:
+        audit_column: SHUPMJ
+        primary_keys:
+          - SHKCOO
+          - SHDOCO
+          - SHDCTO
+      F4211:
+        audit_column: SDUPMJ
+        primary_keys:
+          - SDKCOO
+          - SDDOCO
+          - SDDCTO
+          - SDLNID
+      F4301:
+        audit_column: PHUPMJ
+        primary_keys:
+          - PHKCOO
+          - PHDOCO
+          - PHDCTO
+          - PHSFXO
+      F4311:
+        audit_column: PDUPMJ
+        primary_keys:
+          - PDKCOO
+          - PDDOCO
+          - PDDCTO
+          - PDSFXO
+          - PDLNID
+      F43199:
+        audit_column: OLUPMJ
+        primary_keys:
+          - OLUKID
+      F4930:
+        audit_column: VMUPMJ
+        primary_keys:
+          - VMVEHI
+      F4941:
+        audit_column: RSUPMJ
+        primary_keys:
+          - RSSHPN
+          - RSRSSN
+      F4960:
+        audit_column: TMUPMJ
+        primary_keys:
+          - TMVMCU
+          - TMLDNM
+      F49621:
+        audit_column: TDUPMJ
+        primary_keys:
+          - TDVMCU
+          - TDLDNM
+          - TDDOCO
+          - TDDCTO
+          - TDKCOO
+          - TDLNID
+          - TDLCMP
+          - TDSHPN
+      # F5538011:
+      #   audit_column: DAUPMJ
+      #   primary_keys:
+      #     - DADMCT
+      #     - DADMCS
+      F5540029:
+        audit_column: CCUPMJ
+        primary_keys:
+          - CCZ55SEQUE
+      F554006:
+        audit_column: BPUPMJ
+        primary_keys:
+          - BPZ55REUNI
+          - BPCO
+      F5541106:
+        audit_column: RCUPMJ
+        primary_keys:
+          - RCCO
+          - RCCTRY
+          - RCFY
+          - RCMMCU
+          - RCPBFP
+          - RCMCU
+          - RCLITM
+          - RCDGL
+          - RCDCTO
+      F554201D:
+        audit_column: OEUPMJ
+        primary_keys:
+          - OEKCOO
+          - OEDOCO
+          - OEDCTO
+      F5543048:
+        audit_column: CTUPMJ
+        primary_keys:
+          - CTKCOO
+          - CTDOCO
+          - CTDCTO
+          - CTSFXO
+          - CTLNID
+          - CTUKID
+      F5543050:
+        audit_column: CSUPMJ
+        primary_keys:
+          - CSKCO
+          - CSZ55SLPN
+          - CSZ55SLPT
+      F5543051:
+        audit_column: HSUPMJ
+        primary_keys:
+          - HSKCO
+          - HSZ55SLPN
+          - HSZ55SLPT
+      F5543064:
+        audit_column: LRUPMJ
+        primary_keys:
+          - LRKCO
+          - LRZ55SLPN
+          - LRZ55SLPT
+          - LRLNID
+      F5543220:
+        audit_column: RTUPMJ
+        primary_keys:
+          - RTUKID
+      F554801A:
+        audit_column: PLUPMJ
+        primary_keys:
+          - PLLDNM
+          - PLMCU
+          - PLTRDJ
+      F5549001:
+        audit_column: QSUPMJ
+        primary_keys:
+          - QSKCOO
+          - QSDCTO
+          - QSDOCO
+          - QSSFXO
+          - QSMCU
+          - QSVEHI
+      F5549015:
+        audit_column: QXUPMJ
+        primary_keys:
+          - QXSHPN
+          - QXLDNM
+          - QXSEQ
+      F554901B:
+        audit_column: HDUPMJ
+        primary_keys:
+          - HDTRDJ
+          - HDTRN
+          - HDVMCU
+          - HDPVEH
+      # F5549068:
+      #   audit_column: AFUPMJ
+      #   primary_keys:
+      #     - AFSOPE
+      #     - AFKCOO
+      #     - AFDOCO
+      #     - AFDCTO
+      #     - AFLNID
+      F5549100:
+        audit_column: CMUPMJ
+        primary_keys:
+          - CMUKID
+      F5549200:
+        audit_column: CTUPMJ
+        primary_keys:
+          - CTLDNM
+          - CTVMCU
+      F5549300:
+        audit_column: CFUPMJ
+        primary_keys:
+          - CFKCOO
+          - CFDOCO
+          - CFDCTO
+          - CFLNID
+      F5549320:
+        audit_column: CGUPMJ
+        primary_keys:
+          - CGAN8
+          - CGSHAN
+          - CGUKID
+      F5549400:
+        audit_column: VHT75UPMJ
+        primary_keys:
+          - VHKCOO
+          - VHDOCO
+          - VHDCTO
+          - VHUK01
+          - VHUK02
+          - VHAA05
+      F5549401:
+        audit_column: VDUPMJ
+        primary_keys:
+          - VDKCOO
+          - VDDOCO
+          - VDDCTO
+          - VDUK01
+          - VDUK02
+          - VDAA05
+          - VDAA06
+          - VDSEQ
+      F5549701:
+        audit_column: RCT75UPMJ
+        primary_keys:
+          - RCDL011
+          - RCUKID
+          - RCLDNM
+          - RCAA08
+          - RCAA11
+      F5562001:
+        audit_column: QLUPMJ
+        primary_keys:
+          - QLDMCT
+      F564310A:
+        audit_column: TNUPMJ
+        primary_keys:
+          - TNKCOO
+          - TNDOCO
+          - TNDCTO
+          - TNSFXO
+      F7601B:
+        audit_column: FHUPMJ
+        primary_keys:
+          - FHBNNF
+          - FHBSER
+          - FHN001
+          - FHDCT
+      F7611B:
+        audit_column: FDUPMJ
+        primary_keys:
+          - FDBNNF
+          - FDBSER
+          - FDN001
+          - FDDCT
+          - FDUKID
+      F5576201:
+        audit_column: NFUPMJ
+        primary_keys:
+          - NFBNNF
+          - NFBSER
+          - NFN001
+          - NFDCT
+          - NFUKID
+      F76B12TE:
+        audit_column: SLUPMJ
+        primary_keys:
+          - SLBNNF
+          - SLBSER
+          - SLN001
+          - SLDCT
+          - SLUKID
+      FQ72300:
+        audit_column: NFUPMJ
+        primary_keys:
+          - NFQ720652
+      FQ72301:
+        audit_column: NIUPMJ
+        primary_keys:
+          - NIQ720652
+          - NIQ720653
+      F4111:
+        audit_column: ILCRDJ
+        primary_keys:
+          - ILUKID
+      F554349F:
+        audit_column: MFUPMJ
+        primary_keys:
+          - MFUKID
+      F3711:
+        audit_column: TRUPMJ
+        primary_keys:
+          - TRUKID
+      F553711Z:
+        audit_column: ZZUPMJ
+        primary_keys:
+          - ZZKCOO
+          - ZZDCTO
+          - ZZDOCO
+          - ZZLNID
+          - ZZQTST
+      F41001:
+        audit_column: CIUPMJ
+        primary_keys:
+          - CISY
+          - CIMCU
+      F5543081:
+        audit_column: SAUPMJ
+        primary_keys:
+          - SAKCO
+          - SAZ55SLPN
+          - SAZ55SLPT
+          - SASLNE
+          - SAUKID
+      F5576523:
+        audit_column: CTUPMJ
+        primary_keys:
+          - CTKCOO
+          - CTDCTO
+          - CTDOCO
+          - CTLNID
+          - CTMCU
+      F554201B:
+        audit_column: SAUPMJ
+        primary_keys:
+          - SADOCO
+          - SAKCOO
+          - SADCTO
+          - SALNID
+    rmc:
+      F5560509:
+        audit_column: SRUPMJ
+        primary_keys:
+          - SRMCU
+          - SRDGL
+          - SRITM
+          - SRLNTY
+      # F5560101:
+      #   audit_column: HTUPMJ
+      #   primary_keys:
+      #     - HTUKID
+      #     - HTOBNM
+      # F5560010:
+      #   audit_column: BCUPMJ
+      #   primary_keys:
+      #     - BCKCOO
+      #     - BCMCU
+      #     - BCRP09
+      #     - BCLITM
+      #     - BCTRDJ
+      #     - BCDOCO
+      #     - BCDCTO
+    prodctl:
+      F0005:
+        audit_column: DRUPMJ
+        primary_keys:
+          - DRSY
+          - DRRT
+          - DRKY
+  pscfl:
+    minerva:
+      F_MIN_FREIGHT_FORECAST:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_BOGEY_LIST:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_ITEM:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_TRANSMODE:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_CUSTOMER_OTHER:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_NEW_TRADES_VENDAS:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_VESSEL:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_VESSELPRODUCT:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_PORTWINDOW:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_ATIVO_IBP:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_LOCATION_UNIT:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_LOCATION_OPERATOR:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_LOCATION_AGRUPADA:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_LOCATION_OTHERS:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_LOCATION_UF_STATE:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_ANALISE_CONTRATO:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_EMBARQUE_PORTO:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_LINEUP:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_DEMDESPACTUAL:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_TROCAS_PORTO:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_CALLDIARIO:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_CALLDIARIO_RESUMO:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_DESCARGA_PORTO:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_INVENTARIO_PORTO:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_PSI_IBP_ANALISEPLANTAS_SOLIDOSLIQUIDOS:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_PSI_IBP_ANALISEPLANTAS_ANALISEPROJECAO:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_PSI_IBP_ANALISEPLANTAS_CAPACIDADE:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_PSI_IBP_GRAINS_BASE:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_PSI_IBP_GRAINS_EXPORTACAO:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_PSI_IBP_GRAINS_PROGRAMA:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_DCT_UDC:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_LOCATION_RESTRICTION:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_LOADINGCAPACITY_BASE:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_UNLOADINGCAPACITY_BASE:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_LOCATIONSTORAGECAPACITY_BASE:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_TRANSPORTATIONCONTRACTDETAILS_CAPACITY:
+        audit_column: ROW_INSERTED_DATE
+      F_MIN_TRANSPORTATIONCONTRACTDETAILS_RAIL:
+        audit_column: ROW_INSERTED_DATE
+  ctms:
+    ctmsfm:
+      VW_DCT_EXTRA:
+        audit_column: CTMS_TIMESTAMP
+      VW_DCT_TN:
+        audit_column: CTMS_TIMESTAMP
+      VW_DCT_LOAD:
+        audit_column: CTMS_TIMESTAMP
+  fts:
+    stage_cdp:
+      CAK_OVER_UNDER:
+        audit_column: DT_LEVEL
+      PROCESS_CONTROL_TO_CDP:
+        audit_column: DT_LEVEL
+      CAK_POSITION:
+        audit_column: DT_LEVEL
+      SHIPPED_SUMMARY:
+        audit_column: DT_LEVEL
+  rds:
+    dbo:
+      VW_RDS_HISTORIC_DCT:
+        audit_column: DATAHORAREPLICACAO
+      VW_RDS_HISTORIC_CANCELED_DCT:
+        audit_column: None
+  onet:
+    onet_raw:
+      T1_CATEGORIES_CDP:
+        audit_column: INSERTION_TIME
+      T1_QUANT2_RESULTS_CDP:
+        audit_column: INSERTION_TIME

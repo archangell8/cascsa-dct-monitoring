@@ -1,0 +1,84 @@
+jars: &jars
+  - "./assets/jars/ojdbc7.jar"
+  - "./assets/jars/ImpalaJDBC41.jar"
+  - "./assets/jars/mssql-jdbc-12.8.1.jre8.jar"
+
+teams:
+  prd: "https://cargillonline.webhook.office.com/webhookb2/7764a6f0-d2cf-4294-aa04-a7d5fe5af8bb@57368c21-b8cf-42cf-bd0b-43ecd4bc62ae/IncomingWebhook/19e1993e24de4c3e809a6774084b9e24/0c3eb16c-dd93-4461-8071-7e9f9df253a0/V27EZilzon_SevcPUzYx2rzQ7A1eu6KF7LJvXD132vEf81 "
+  dev: "https://cargillonline.webhook.office.com/webhookb2/7764a6f0-d2cf-4294-aa04-a7d5fe5af8bb@57368c21-b8cf-42cf-bd0b-43ecd4bc62ae/IncomingWebhook/f19fa11ed9d84d41a59f3301788ecef4/0b7c2a34-f407-4a1c-b825-7d31d7692af7/V228IR-ZwCFfEn5wkEBOLlWWtlz94TJ2eyWTBt3mHbIy81"
+
+email:
+  server: "mailrelayapp.la.corp.cargill.com"
+  sender: "donotreply@cargill.com"
+  recipients:
+    - f_junior@crgl-thirdparty.com
+    - amanda_dasilva@crgl-thirdparty.com
+    - elias_belmiro@cargill.com
+    - cezaraugusto_manesaires@cargill.com
+    - wesley_medeiros@cargill.com
+    - thandy_norberto@crgl-thirdparty.com
+
+  maintype: "text"
+  subtype: "html"
+
+snowflake_prd:
+  user: "${SNOWFLAKE_PRD_USER}"
+  account: "${SNOWFLAKE_PRD_ACCOUNT}"
+  warehouse: "${SNOWFLAKE_PRD_WAREHOUSE}"
+  role: "${SNOWFLAKE_PRD_ROLE}"
+  authenticator: "oauth"
+
+snowflake_dev:
+  user: "${SNOWFLAKE_DEV_USER}"
+  account: "${SNOWFLAKE_DEV_ACCOUNT}"
+  warehouse: "${SNOWFLAKE_DEV_WAREHOUSE}"
+  role: "${SNOWFLAKE_DEV_ROLE}"
+  authenticator: "oauth"
+
+jde:
+  jclassname: "oracle.jdbc.driver.OracleDriver"
+  url: "jdbc:oracle:thin:@ldap://oidsp0.cargill.com:3060/cn=OracleContext,dc=cargill,dc=com/pjdel"
+  driver_args: ["${ORACLE_JDE_USER}", "${ORACLE_JDE_PASS}"]
+  jars: *jars
+
+jde_full:
+  jclassname: "oracle.jdbc.driver.OracleDriver"
+  url: "jdbc:oracle:thin:@ldap://oidsp0.cargill.com:3060/cn=OracleContext,dc=cargill,dc=com/pjdel"
+  driver_args: ["${ORACLE_JDE_USER}", "${ORACLE_JDE_PASS}"]
+  jars: *jars
+
+pscfl:
+  jclassname: "oracle.jdbc.driver.OracleDriver"
+  url: "jdbc:oracle:thin:@//xcp4client03-vip.la.corp.cargill.com:1521/pscfl.cargill.com"
+  driver_args: ["${ORACLE_PSCFL_USER}", "${ORACLE_PSCFL_PASS}"]
+  jars: *jars
+
+ctms:
+  jclassname: "oracle.jdbc.driver.OracleDriver"
+  url: "jdbc:oracle:thin:@//xcp4client02-vip.la.corp.cargill.com:1521/pctml.cargill.com"
+  driver_args: ["${ORACLE_CTMS_USER}", "${ORACLE_CTMS_PASS}"]
+  jars: *jars
+
+fts:
+  jclassname: "oracle.jdbc.driver.OracleDriver"
+  url: "jdbc:oracle:thin:@//xcp4client01-vip.la.corp.cargill.com:1521/pftslo.cargill.com"
+  driver_args: ["${ORACLE_FTS_USER}", "${ORACLE_FTS_PASS}"]
+  jars: *jars
+
+rds:
+  jclassname: "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+  url: "jdbc:sqlserver://rdswebdw.la.corp.cargill.com:1433;databaseName=PRDSDW;encrypt=false;trustServerCertificate=false"
+  driver_args: ["${ORACLE_RDS_USER}", "${ORACLE_RDS_PASS}"]
+  jars: *jars
+
+onet:
+  jclassname: "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+  url: "jdbc:sqlserver://MSBRCAMPCP3220.la.corp.cargill.com:1433;databaseName=sa_fsqr_onet_data;encrypt=false;trustServerCertificate=false"
+  driver_args: ["${SQLSERVER_ONET_USER}", "${SQLSERVER_ONET_PASS}"]
+  jars: *jars
+
+cdp:
+  jclassname: "com.cloudera.impala.jdbc.Driver"
+  url: "jdbc:impala://drona-impala.cargill.com:21050/;SSL=1;AuthMech=1;KrbAuthType=0;KrbHostFQDN=drona-impala.cargill.com;KrbServiceName=impala"
+  driver_args: ["${CDP_USER}", "${CDP_PASS}"]
+  jars: *jars

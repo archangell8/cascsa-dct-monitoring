@@ -1,0 +1,9 @@
+snowflake-connector-python
+jaydebeapi==1.2.3
+python-dotenv
+pandas
+PyYAML
+jinja2
+ruff
+tabulate
+pymsteams
