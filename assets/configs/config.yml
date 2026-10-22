@@ -5,7 +5,7 @@ jars: &jars
 
 teams:
   prd: "https://cargillonline.webhook.office.com/webhookb2/7764a6f0-d2cf-4294-aa04-a7d5fe5af8bb@57368c21-b8cf-42cf-bd0b-43ecd4bc62ae/IncomingWebhook/19e1993e24de4c3e809a6774084b9e24/0c3eb16c-dd93-4461-8071-7e9f9df253a0/V27EZilzon_SevcPUzYx2rzQ7A1eu6KF7LJvXD132vEf81 "
-  dev: "https://cargillonline.webhook.office.com/webhookb2/7764a6f0-d2cf-4294-aa04-a7d5fe5af8bb@57368c21-b8cf-42cf-bd0b-43ecd4bc62ae/IncomingWebhook/f19fa11ed9d84d41a59f3301788ecef4/0b7c2a34-f407-4a1c-b825-7d31d7692af7/V228IR-ZwCFfEn5wkEBOLlWWtlz94TJ2eyWTBt3mHbIy81"
+  dev: "https://cargillonline.webhook.office.com/webhookb2/7764a6f0-d2cf-4294-aa04-a7d5fe5af8bb@57368c21-b8cf-42cf-bd0b-43ecd4bc62ae/IncomingWebhook/7b16639866b54927bb381af5fb7fcac8/0c3eb16c-dd93-4461-8071-7e9f9df253a0/V2a72iO6HgpTmkQDXUXbKdZVODeYPB2SWfChorsrOI93E1"
 
 email:
   server: "mailrelayapp.la.corp.cargill.com"
